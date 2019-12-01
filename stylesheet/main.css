@@ -1,0 +1,64 @@
+img{
+    width:5%;
+    padding: 10px;
+}
+.main{
+    display: flex;
+    padding: 20px;
+    flex-direction:column;
+    width: 40%;
+}
+.main div{
+    display: flex;
+}
+/* body{
+    background: url('/images/tree.jpg/');
+} */
+
+.boy{
+position: relative;;
+    background-color: greenyellow;
+   margin-top:300px;
+   padding:20px 10px ;
+   right:0;
+   width: 20%;
+    clear: both;
+}
+
+#start{
+
+    position: absolute;
+    top:500px;
+    justify-content: center;
+    left: 50%;
+
+}
+/* body{
+    background-image: url('../images/tree.jpg');
+    background-repeat: no-repeat;
+    background-size: 700px;
+} */
+
+/* .first{
+    background-image: url('../images/tree.jpg');
+
+}
+.first img{
+    opacity: .5;
+    width: 50%;
+} */
+
+
+.apple img{
+    position: fixed;
+}
+
+#apple1{
+    left:0;
+    top:0;
+}
+
+#apple2{
+    left:100px;
+    top:-150;
+}
