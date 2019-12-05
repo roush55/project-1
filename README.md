@@ -1,7 +1,7 @@
 # Project Title
 Catch Apple 
 
-Description
+#Description
 The project is a game suitable for one player. It is inspired by drop and catch games.
 
 # Technical Used
