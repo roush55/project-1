@@ -76,16 +76,16 @@ $(function(){
             //select the left div
             let leftArrow =$('#left')
             
-            leftArrow.on('click',function(){
-                playBoy.finish().animate({"left":"-=50"},100)
+            leftArrow.on('touchstart',function(){
+                playBoy.finish().animate({"left":"-=50"},1000)
             })
 
 
             //select the right div
             let rightArrow =$('#right')
             
-            rightArrow.on('click',function(){
-                playBoy.finish().animate({"left":"+=50"},100)
+            rightArrow.on('touchstart',function(){
+                playBoy.finish().animate({"left":"+=50"},1000)
             })
 
 

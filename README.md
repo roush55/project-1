@@ -1,32 +1,39 @@
-# Project Title
-Catch Apple 
+Project Title
+Catch appls
 
-#Description
+Description
 The project is a game suitable for one player. It is inspired by drop and catch games.
 
-# Technical Used
-for this project I'v used :
+Technical Used
+for this project Iv used :
 
-1-HTML
-2-CSS
-3-javascript 
-4-jQuery for DOM manipulation
----
-![wireframe](path)
-# User Stories
+HTML
+CSS
+javascript 
+jQuery for DOM manipulation
+
+Step1: Creating the layout. . Step2: Specifying functionality. Step3: Implementing the layout.
+
+User Stories
+
+
 Planning and Development Process
-search for new meth that fits 
+A basic story of your planning and developing this project.
+
 I started the project with the layout first. I then specified the entities (the basic ones) that would set the skeleton of the program. Then, I styled the entities. Finally, I added some features that would make the game more appealing.
----
-# Problem-Solving Strategy:
-1-write down the problem try to analysis.
-2-Asking and constant modification to the code.
-3-search && read other codes 
- 
 
-# Unsolved problems:
-add more obstacle to the game and more levels.
+Problem-Solving Strategy
+What strategy did you use to solve your problems.
 
-# References
+Asking and constant modification to the code.
+
+Unsolved problems
+List unsolved problems which would be fixed in future iterations.
+
+I guess I would like to integrate AI into future games.
+Acknowledgments
+Hat tip to anyone whose code was used
+Inspiration
+etc
+References
 https://jquery.com
-https://codepen.io
