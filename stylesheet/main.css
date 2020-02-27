@@ -5,13 +5,15 @@
 
 
  #contanier{
+     position: relative;
     height:100vh;
     width: 80vh;
-    position: fixed;
-    overflow: hidden;
+    overflow:hidden;
     z-index: 1;
-    left: 5vh;  
+    left:50vh;  
     background-image: url("../images/tree.jpg");
+    
+    
   
 } 
 #back{
@@ -19,7 +21,9 @@
 }
 
 
-#boy{
+ #boy{
+
+   
     background-image: url('../images/boy-copy.png');
     position: absolute;
     padding: 0;
@@ -32,6 +36,7 @@
     
 }
 #aside{
+    
     display: flex;
     position:fixed;
     /* background-image:url('../images/aside.png'); */
@@ -42,6 +47,7 @@
     left:65%;
 }
   #start{
+      color: black;
 position: absolute;
     width: 45vh;
     height: 70vh;
@@ -50,22 +56,27 @@ position: absolute;
     background-repeat:no-repeat;
     margin-top: 20px;
     padding-left:2% ;
+    opacity: .9;
     
 
     
  } 
+ 
  #start div{
 
-     font-family: Arial, Helvetica, sans-serif;
-     font-style: italic;
+     font-family:'Comic Sans MS';
+     
    text-align:center;
-   font-size: 0.9em;
-   color:brown;
-   margin-top: 22%;
+   font-size: 15px;
+   color:black;
+   margin-top: 20%;
    font-weight: 800;
 
    
  }
+ #start img{
+    height: 40px;
+}
 
 .apple img{
     position: absolute;
@@ -151,6 +162,7 @@ footer{
             background-image: url("../images/tree.jpg");
             top: 0;
             left: 0;
+            overflow: hidden;
 
         }
 

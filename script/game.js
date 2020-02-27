@@ -5,7 +5,7 @@ $(function(){
 
    const startGame = function(){ //THE GAME START HERE
         setTimeout(function(){
-            if(point >= 8){
+            if(point >= 4){
                 alert('You Won (: ')      
             }
             else {
@@ -64,13 +64,17 @@ $(function(){
             },400)
 
             const playBoy=$('.boy');//this is the boy
-
+           //const widthWindow=$('contanier').width()
+            
             $(document).keydown (function(e){ 
+               
+                
                     if (e.which == '39'){
                 playBoy.finish().animate({"left":"+=50"},100)}
                 else if (e.which == '37'){
                 playBoy.finish().animate({"left":"-=50"},100)}
-
+                
+                
             })
 
             //select the left div
