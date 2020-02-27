@@ -81,7 +81,7 @@ $(function(){
             let leftArrow =$('#left')
             
             leftArrow.on('touchstart',function(){
-                playBoy.finish().animate({"left":"-=200"},100)
+                playBoy.finish().animate({"left":"-=100"},100)
             })
 
 
@@ -89,7 +89,7 @@ $(function(){
             let rightArrow =$('#right')
             
             rightArrow.on('touchstart',function(){
-                playBoy.finish().animate({"left":"+=200"},100)
+                playBoy.finish().animate({"left":"+=100"},100)
             })
 
 
