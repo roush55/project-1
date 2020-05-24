@@ -46,8 +46,8 @@
     left:65%;
 }
   #start{
-      color: black;
-position: absolute;
+    color: black;
+    position: absolute;
     width: 45vh;
     height: 70vh;
     background-image:url('../images/instruction.png');
