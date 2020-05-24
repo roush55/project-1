@@ -62,17 +62,27 @@ $(function(){
 
 
             },400)
-
-            const playBoy=$('.boy');//this is the boy
-           //const widthWindow=$('contanier').width()
+            const playBoy=$('.boy');
             
+    
+            const maxLeft = $('#contanier').width()-playBoy.width();
+           
+            //this is the boy
+           //const widthWindow=$('contanier').width()
+          
             $(document).keydown (function(e){ 
                
                 
-                    if (e.which == '39'){
-                playBoy.finish().animate({"left":"+=50"},100)}
-                else if (e.which == '37'){
-                playBoy.finish().animate({"left":"-=50"},100)}
+                    if (e.which == '39' && playBoy.position().left < maxLeft){
+                        
+                            
+                        
+                playBoy.finish().animate({"left":"+=40px" },90)}
+                
+                 if (e.which == '37' && playBoy.position().right !== maxLeft){
+                    
+                    
+                playBoy.finish().animate({"left":"-40px" },100)}
                 
                 
             })
@@ -81,7 +91,8 @@ $(function(){
             let leftArrow =$('#left')
             
             leftArrow.on('touchstart',function(){
-                playBoy.finish().animate({"left":"-=100"},50)
+                if(playBoy.position().right !== maxLeft){
+                playBoy.finish().animate({"left":"-40"},50)}
             })
 
 
@@ -89,7 +100,8 @@ $(function(){
             let rightArrow =$('#right')
             
             rightArrow.on('touchstart',function(){
-                playBoy.finish().animate({"left":"+=100"},50)
+                if (playBoy.position().left < maxLeft){
+                playBoy.finish().animate({"left":"=+90"},50)}
             })
 
 
