@@ -20,8 +20,8 @@
 
 
  #boy{
-     border:1px solid red;
-     display:inline-block;
+     
+     display:block;
     background-image: url('../images/boy-copy.png');
     position: relative;
     padding: 0;
@@ -156,13 +156,23 @@ footer{
         }
 
         #contanier{
-            height: 100vh;
+            height:100vh;
             width: 100%;
             background-image: url("../images/tree.jpg");
+            background-repeat:no-repeat ;
             top: 0;
             left: 0;
+            bottom:0;
+           
             overflow: hidden;
 
+        }
+        #boy{
+             top: 80% !important;
+            /* bottom:0px !important */
+        }
+        #point{
+            margin-right: 10px;
         }
 
     
