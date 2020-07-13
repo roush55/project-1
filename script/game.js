@@ -1,4 +1,4 @@
-let sec =15;
+let sec =20;
 let point = 0
 $(function(){
  let start = false;

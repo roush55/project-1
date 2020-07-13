@@ -23,6 +23,7 @@
      
      display:block;
     background-image: url('../images/boy-copy.png');
+    background-size: 100%  100%!important;
     position: relative;
     padding: 0;
     top: 550px !important;
@@ -32,6 +33,7 @@
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
+    border: 3px solid red;
     
 }
 #aside{
