@@ -1,11 +1,11 @@
-let sec =20;
+let sec =10;
 let point = 0
 $(function(){
  let start = false;
 
    const startGame = function(){ //THE GAME START HERE
         setTimeout(function(){
-            if(point >= 4){
+            if(point >= 5){
                 alert('You Won (: ')      
             }
             else {
@@ -65,24 +65,24 @@ $(function(){
             const playBoy=$('.boy');
             
     
-            const maxLeft = $('#contanier').width()-playBoy.width();
+            //const maxLeft = $('#contanier').width()-playBoy.width();
             
            
             //this is the boy
-           //const widthWindow=$('contanier').width()
-          
-            $(document).keydown (function(e){ 
-               
+           //const widthWindow=$('#contanier').width()
+           const maxLeft = $('#contanier').width()-playBoy.width();
+           
+
+            $(document).keydown(function(e){ 
+                 
                 
                     if (e.which == '39' && playBoy.position().left < maxLeft){
                         
-                            
+                          
                         
-                playBoy.finish().animate({"left":"+=65px" },100)}
-                
-                 else if (e.which == '37' && playBoy.position().left != maxLeft){  
-                    
-                playBoy.finish().animate({"left":"-40px" },"slow")}
+                        playBoy.finish().animate({"left":"+=40"},100)}	
+                        else if (e.which == '37'&& playBoy.position().right !== maxLeft ){	
+                        playBoy.finish().animate({"left":"-=40"},100)}
                 
                 
             })
@@ -91,8 +91,7 @@ $(function(){
             let leftArrow =$('#left')
             
             leftArrow.on('touchstart',function(){
-                if(playBoy.position().left !== maxLeft){
-                playBoy.finish().animate({"left":"-40"},50)}
+                playBoy.finish().animate({"left":"-=100"},50)
             })
 
 
@@ -100,8 +99,7 @@ $(function(){
             let rightArrow =$('#right')
             
             rightArrow.on('touchstart',function(){
-                if (playBoy.position().left < maxLeft){
-                playBoy.finish().animate({"left":"+=60"},50)}
+                playBoy.finish().animate({"left":"+=100"},50)
             })
 
 
@@ -134,8 +132,6 @@ $(function(){
             const sElement = $('#boy')
             collision(fElement,sElement)
             // function collision END HERE
-
-
 
 
             function gamePoint(){
